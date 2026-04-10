@@ -1,0 +1,15 @@
+# Secrets — never commit
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp image/video downloads
+cache/
+
+# State files are intentionally tracked (needed for deduplication across runs)
+# .seen_articles.json
+# .last_run*

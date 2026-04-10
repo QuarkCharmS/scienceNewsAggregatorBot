@@ -1,0 +1,53 @@
+name: Science Digest
+
+on:
+  schedule:
+    - cron: '0 21 * * *'   # 9 PM UTC — adjust if your timezone differs
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of articles to pick (overrides default of 5)'
+        required: false
+        type: number
+
+permissions:
+  contents: write
+
+# Prevent concurrent state commits from racing
+concurrency:
+  group: bot-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run science digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+        run: |
+          COUNT_ARG=""
+          [ -n "${{ github.event.inputs.count }}" ] && COUNT_ARG="--count ${{ github.event.inputs.count }}"
+          python bot.py --now $COUNT_ARG
+
+      - name: Commit state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f .seen_articles.json .last_run 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: update science digest state [skip ci]"
+          git push

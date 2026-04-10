@@ -1,0 +1,52 @@
+name: Physics & Astronomy Digest
+
+on:
+  schedule:
+    - cron: '0 17 * * *'   # 5 PM UTC
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of articles to pick (overrides default of 3)'
+        required: false
+        type: number
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bot-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run physics & astronomy digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+        run: |
+          COUNT_ARG=""
+          [ -n "${{ github.event.inputs.count }}" ] && COUNT_ARG="--count ${{ github.event.inputs.count }}"
+          python bot.py --phys $COUNT_ARG
+
+      - name: Commit state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f .seen_articles.json .last_run_phys 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: update physics digest state [skip ci]"
+          git push
