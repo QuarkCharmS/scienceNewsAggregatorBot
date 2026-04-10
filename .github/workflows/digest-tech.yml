@@ -8,7 +8,7 @@ on:
       count:
         description: 'Number of articles to pick (overrides default of 4)'
         required: false
-        type: number
+        type: string
 
 permissions:
   contents: write
@@ -39,9 +39,12 @@ jobs:
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
         run: |
-          COUNT_ARG=""
-          [ -n "${{ github.event.inputs.count }}" ] && COUNT_ARG="--count ${{ github.event.inputs.count }}"
-          python bot.py --tech $COUNT_ARG
+          COUNT="${{ github.event.inputs.count }}"
+          if [ -n "$COUNT" ] && [ "$COUNT" != "0" ]; then
+            python bot.py --tech --count "$COUNT"
+          else
+            python bot.py --tech
+          fi
 
       - name: Commit state
         run: |
