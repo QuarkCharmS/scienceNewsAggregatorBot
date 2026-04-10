@@ -1,0 +1,28 @@
+2026-04-10 12:00:02 [INFO] __main__: Running CS/AI/tech digest immediately (--tech).
+2026-04-10 12:00:02 [INFO] __main__: Starting CS/AI/tech digest run...
+2026-04-10 12:00:02 [INFO] fetcher: Fetching articles published after 2026-04-09 09:00 UTC
+2026-04-10 12:00:03 [INFO] fetcher: Fetched 3 recent articles from 'MIT Technology Review'
+2026-04-10 12:00:04 [INFO] fetcher: Fetched 3 recent articles from 'IEEE Spectrum'
+2026-04-10 12:00:06 [INFO] fetcher: Fetched 5 recent articles from 'Ars Technica Science'
+2026-04-10 12:00:06 [INFO] fetcher: Fetched 5 recent articles from 'Ars Technica'
+2026-04-10 12:00:09 [INFO] fetcher: Fetched 0 recent articles from 'Wired Science'
+2026-04-10 12:00:09 [INFO] fetcher: Fetched 5 recent articles from 'Wired'
+2026-04-10 12:00:09 [INFO] fetcher: Fetched 5 recent articles from 'The Verge'
+2026-04-10 12:00:10 [INFO] fetcher: Fetched 5 recent articles from 'arXiv cs.AI'
+2026-04-10 12:00:11 [INFO] fetcher: Fetched 5 recent articles from 'arXiv cs.LG'
+2026-04-10 12:00:12 [WARNING] fetcher: Feed 'DeepMind Blog' is malformed: document declared as us-ascii, but parsed as utf-8
+2026-04-10 12:00:12 [INFO] fetcher: Fetched 0 recent articles from 'DeepMind Blog'
+2026-04-10 12:00:13 [INFO] fetcher: Fetched 2 recent articles from 'MIT News AI'
+2026-04-10 12:00:14 [WARNING] fetcher: Feed 'VentureBeat AI' is malformed: document declared as us-ascii, but parsed as utf-8
+2026-04-10 12:00:14 [INFO] fetcher: Fetched 0 recent articles from 'VentureBeat AI'
+2026-04-10 12:00:14 [INFO] fetcher: Total recent articles fetched: 38
+2026-04-10 12:00:14 [INFO] seen: Skipped 7 already-sent article(s).
+2026-04-10 12:00:23 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 12:00:23 [INFO] ai: Claude selected 1 articles
+2026-04-10 12:00:25 [INFO] publisher: Downloading /static/browse/0.3.4/images/arxiv-logo-fb.png ...
+2026-04-10 12:00:25 [WARNING] publisher: Could not send image for 'Blind Refusal: Language Models Refuse to Help Users Evade Unjust, Absurd, and Illegitimate Rules': unknown url type: '/static/browse/0.3.4/images/arxiv-logo-fb.png' — sending text only.
+2026-04-10 12:00:25 [INFO] httpx: HTTP Request: POST https://api.telegram.org/bot8678769946:AAGRkVN_9Vrih_TVjckyfzyt7UlNXiDCbhA/sendMessage "HTTP/1.1 200 OK"
+2026-04-10 12:00:25 [INFO] publisher: Posted article 1/1 to '@cienciatelegram'
+2026-04-10 12:00:25 [INFO] publisher: Digest complete — 1 messages posted to '@cienciatelegram'
+2026-04-10 12:00:25 [INFO] seen: Marked 1 article(s) as sent.
+2026-04-10 12:00:25 [INFO] __main__: CS/AI/tech digest completed successfully.
