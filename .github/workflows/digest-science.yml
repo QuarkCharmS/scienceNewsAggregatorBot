@@ -43,8 +43,10 @@ jobs:
           COUNT="${{ github.event.inputs.count }}"
           if [ -n "$COUNT" ] && [ "$COUNT" != "0" ]; then
             python bot.py --now --count "$COUNT"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python bot.py --now --count 2
           else
-            python bot.py --now
+            python bot.py --now --count 5
           fi
 
       - name: Commit state
