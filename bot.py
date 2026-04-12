@@ -66,7 +66,7 @@ def run_digest(top_n: int | None = None) -> None:
 
     # 2. Ask Claude to pick and explain the top 5
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 5)
+        top_articles = rank_and_summarize(articles, top_n=top_n or 5, topic="general science, biology, medicine, chemistry, environment, climate, health, nature")
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping digest.", exc)
         return
@@ -93,7 +93,7 @@ def run_phys_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 3)
+        top_articles = rank_and_summarize(articles, top_n=top_n or 3, topic="physics, astronomy, astrophysics, cosmology, space exploration, planetary science")
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping.", exc)
         return
@@ -119,7 +119,7 @@ def run_tech_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 4)
+        top_articles = rank_and_summarize(articles, top_n=top_n or 4, topic="artificial intelligence, machine learning, deep learning, computer science, technology products and research")
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping.", exc)
         return
@@ -145,7 +145,7 @@ def run_software_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 4)
+        top_articles = rank_and_summarize(articles, top_n=top_n or 4, topic="software engineering, DevOps, cloud computing, programming languages, developer tools, software architecture, open source, platform engineering")
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping.", exc)
         return

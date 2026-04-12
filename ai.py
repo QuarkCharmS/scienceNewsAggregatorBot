@@ -11,7 +11,7 @@ CLIENT = anthropic.Anthropic()
 MODEL = "claude-sonnet-4-5"
 
 
-def build_prompt(articles: list[dict], top_n: int) -> str:
+def build_prompt(articles: list[dict], top_n: int, topic: str) -> str:
     articles_text = ""
     for i, article in enumerate(articles):
         articles_text += (
@@ -25,16 +25,22 @@ def build_prompt(articles: list[dict], top_n: int) -> str:
 think curious teenagers or adults with no science background. Make science feel exciting and \
 accessible, never intimidating.
 
+This digest is strictly focused on: {topic}
+IMPORTANT: If an article is not clearly and directly related to these topics, do NOT select it — \
+skip it entirely, even if it seems interesting. Off-topic articles (legal news, politics, lifestyle, \
+business, sports, food, entertainment) must never be included.
+
 For each selected article you must write content in BOTH Spanish and English:
 - Spanish: everyday words only, answer "why does this matter / why is this cool?", no jargon without explanation.
 - English: same style and quality as the Spanish version — plain, engaging, no dry academic phrasing.
 - Both versions must avoid "researchers found" or "the study shows" — just tell the story directly.
 
-Below are {len(articles)} science news articles published today. Your task:
-1. Select the {top_n} most important, surprising, or broadly interesting articles.
+Below are {len(articles)} articles published today. Your task:
+1. Select the {top_n} most important articles that are strictly on-topic ({topic}).
 2. For each, write a 2-3 sentence explanation in Spanish AND a 2-3 sentence explanation in English.
 3. Translate the title to Spanish as well (keep the English original too).
 4. Assign one relevant emoji per article.
+5. If there are not enough on-topic articles to fill {top_n} slots, return fewer — do not pad with off-topic content.
 
 Return ONLY a JSON array with exactly {top_n} objects. Each object must have these fields:
 - "id": the integer index from the list above (e.g. 0, 3, 12)
@@ -52,12 +58,12 @@ Articles:
 {articles_text}"""
 
 
-def rank_and_summarize(articles: list[dict], top_n: int = 5) -> list[dict]:
+def rank_and_summarize(articles: list[dict], top_n: int = 5, topic: str = "general science and technology") -> list[dict]:
     """Send articles to Claude and get back the top top_n with explanations."""
     if not articles:
         raise ValueError("No articles provided to rank.")
 
-    prompt = build_prompt(articles, top_n)
+    prompt = build_prompt(articles, top_n, topic)
 
     try:
         message = CLIENT.messages.create(
@@ -84,6 +90,9 @@ def rank_and_summarize(articles: list[dict], top_n: int = 5) -> list[dict]:
 
     if not isinstance(results, list) or len(results) == 0:
         raise ValueError(f"Unexpected Claude response structure: {results!r}")
+
+    if len(results) < top_n:
+        logger.warning("Claude returned %d articles (fewer than requested %d) — likely not enough on-topic content.", len(results), top_n)
 
     # Validate required fields
     required = {"emoji", "title_es", "title_en", "explanation_es", "explanation_en", "link", "source"}
