@@ -56,7 +56,6 @@ TECH_AI_FEEDS = {
 SOFTWARE_FEEDS = {
     # Software / DevOps
     "The New Stack": "https://thenewstack.io/feed",
-    "Hacker News Front Page": "https://hnrss.org/frontpage",
     "Hacker News Best": "https://hnrss.org/best",
     "InfoQ DevOps": "https://feed.infoq.com/devops",
     "InfoQ": "https://feed.infoq.com",
