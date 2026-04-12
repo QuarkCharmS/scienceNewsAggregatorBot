@@ -53,6 +53,21 @@ TECH_AI_FEEDS = {
     "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
 }
 
+SOFTWARE_FEEDS = {
+    # Software / DevOps
+    "The New Stack": "https://thenewstack.io/feed",
+    "Hacker News Front Page": "https://hnrss.org/frontpage",
+    "Hacker News Best": "https://hnrss.org/best",
+    "InfoQ DevOps": "https://feed.infoq.com/devops",
+    "InfoQ": "https://feed.infoq.com",
+    # Cloud
+    "GitHub Blog": "https://github.blog/feed",
+    "AWS News": "https://aws.amazon.com/blogs/aws/feed",
+    "AWS DevOps": "https://aws.amazon.com/blogs/devops/feed",
+    "Google Cloud": "https://cloud.google.com/feeds/gcp-news.xml",
+    "Azure DevOps": "https://devblogs.microsoft.com/devops/feed",
+}
+
 MAX_ARTICLES_PER_FEED = 5
 LOOKBACK_HOURS = 24
 
