@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from fetcher import fetch_all_articles, PHYSICS_ASTRONOMY_FEEDS, TECH_AI_FEEDS
+from fetcher import fetch_all_articles, PHYSICS_ASTRONOMY_FEEDS, TECH_AI_FEEDS, SOFTWARE_FEEDS
 from ai import rank_and_summarize, translate_apod
 from apod import fetch_apod
 from publisher import post_digest, post_apod
@@ -28,6 +28,7 @@ LAST_RUN_FILE = pathlib.Path(__file__).parent / ".last_run"
 LAST_RUN_PHYS_FILE = pathlib.Path(__file__).parent / ".last_run_phys"
 LAST_RUN_TECH_FILE = pathlib.Path(__file__).parent / ".last_run_tech"
 LAST_RUN_APOD_FILE = pathlib.Path(__file__).parent / ".last_run_apod"
+LAST_RUN_SOFTWARE_FILE = pathlib.Path(__file__).parent / ".last_run_software"
 
 
 def _require_env(name: str) -> str:
@@ -134,6 +135,32 @@ def run_tech_digest(top_n: int | None = None) -> None:
     logger.info("CS/AI/tech digest completed successfully.")
 
 
+def run_software_digest(top_n: int | None = None) -> None:
+    """Fetch, rank (top 4), and post the software/devops morning digest."""
+    logger.info("Starting software digest run...")
+
+    articles = filter_unseen(fetch_all_articles(feeds=SOFTWARE_FEEDS))
+    if not articles:
+        logger.warning("No new software articles after deduplication — skipping.")
+        return
+
+    try:
+        top_articles = rank_and_summarize(articles, top_n=top_n or 4)
+    except Exception as exc:
+        logger.error("Claude processing failed: %s — skipping.", exc)
+        return
+
+    try:
+        asyncio.run(post_digest(BOT_TOKEN, CHANNEL_ID, top_articles))
+    except Exception as exc:
+        logger.error("Failed to post software digest to Telegram: %s", exc)
+        return
+
+    mark_sent(top_articles)
+    _set_last_run(LAST_RUN_SOFTWARE_FILE)
+    logger.info("Software digest completed successfully.")
+
+
 def run_apod() -> None:
     """Fetch and post today's APOD."""
     logger.info("Starting APOD run...")
@@ -206,6 +233,13 @@ if __name__ == "__main__":
     elif "--tech-check" in args:
         run_if_missed(lambda: run_tech_digest(top_n=count), LAST_RUN_TECH_FILE, "CS/AI/tech digest")
 
+    elif "--software" in args:
+        logger.info("Running software digest immediately (--software).")
+        run_software_digest(top_n=count)
+
+    elif "--software-check" in args:
+        run_if_missed(lambda: run_software_digest(top_n=count), LAST_RUN_SOFTWARE_FILE, "Software digest")
+
     elif "--apod" in args:
         logger.info("Running APOD immediately (--apod).")
         run_apod()
@@ -221,7 +255,9 @@ if __name__ == "__main__":
         print("  python bot.py --phys-check   Catch-up: physics digest if not run today")
         print("  python bot.py --tech         Run CS/AI/tech digest immediately (2 PM)")
         print("  python bot.py --tech-check   Catch-up: tech digest if not run today")
-        print("  python bot.py --apod         Run APOD immediately (10 PM)")
-        print("  python bot.py --apod-check   Catch-up: APOD if not run today")
+        print("  python bot.py --software       Run software digest immediately (10 AM)")
+        print("  python bot.py --software-check Catch-up: software digest if not run today")
+        print("  python bot.py --apod           Run APOD immediately (10 PM)")
+        print("  python bot.py --apod-check     Catch-up: APOD if not run today")
         print()
         print("  --count N  Override number of articles (e.g. --now --count 3)")
