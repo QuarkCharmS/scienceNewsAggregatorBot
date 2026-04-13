@@ -77,7 +77,7 @@ async def _send_article(bot, channel_id: str, article: dict, text: str) -> None:
         try:
             local_file = _download(image_url)
             with open(local_file, "rb") as f:
-                await bot.send_photo(chat_id=channel_id, photo=f)
+                await bot.send_photo(chat_id=channel_id, photo=f, disable_notification=True)
             await asyncio.sleep(MESSAGE_DELAY)
         except Exception as exc:
             logger.warning("Could not send image for '%s': %s — sending text only.", article.get("title_en", ""), exc)
@@ -90,6 +90,7 @@ async def _send_article(bot, channel_id: str, article: dict, text: str) -> None:
         text=text,
         parse_mode=ParseMode.MARKDOWN,
         disable_web_page_preview=True,
+        disable_notification=True,
     )
 
 
@@ -193,10 +194,10 @@ async def post_apod(
 
         if apod.get("media_type") == "image":
             with open(local_file, "rb") as f:
-                await bot.send_photo(chat_id=channel_id, photo=f)
+                await bot.send_photo(chat_id=channel_id, photo=f, disable_notification=True)
         else:
             with open(local_file, "rb") as f:
-                await bot.send_video(chat_id=channel_id, video=f)
+                await bot.send_video(chat_id=channel_id, video=f, disable_notification=True)
     finally:
         if local_file and local_file.exists():
             local_file.unlink()
@@ -208,5 +209,6 @@ async def post_apod(
         text=format_apod_text(apod, translation),
         parse_mode=ParseMode.MARKDOWN,
         disable_web_page_preview=True,
+        disable_notification=True,
     )
     logger.info("APOD posted to '%s'", channel_id)
