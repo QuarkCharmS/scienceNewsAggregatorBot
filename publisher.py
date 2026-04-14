@@ -204,11 +204,17 @@ async def post_apod(
             logger.info("Deleted cached file: %s", local_file.name)
 
     await asyncio.sleep(MESSAGE_DELAY)
-    await bot.send_message(
+    text_msg = await bot.send_message(
         chat_id=channel_id,
         text=format_apod_text(apod, translation),
         parse_mode=ParseMode.MARKDOWN,
         disable_web_page_preview=True,
         disable_notification=True,
     )
-    logger.info("APOD posted to '%s'", channel_id)
+
+    await bot.pin_chat_message(
+        chat_id=channel_id,
+        message_id=text_msg.message_id,
+        disable_notification=True,
+    )
+    logger.info("APOD posted and pinned in '%s'", channel_id)
