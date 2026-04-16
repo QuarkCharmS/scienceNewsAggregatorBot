@@ -1,9 +1,8 @@
 name: Software Digest
 
 on:
-  # schedule disabled — will be re-enabled for a dedicated software channel
-  # schedule:
-  #   - cron: '0 10 * * *'   # 10 AM UTC
+  schedule:
+    - cron: '0 10 * * *'   # 10 AM UTC
   workflow_dispatch:
     inputs:
       count:
@@ -38,6 +37,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          TELEGRAM_SOFTWARE_CHANNEL_ID: ${{ secrets.TELEGRAM_SOFTWARE_CHANNEL_ID }}
           NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
         run: |
           COUNT="${{ github.event.inputs.count }}"

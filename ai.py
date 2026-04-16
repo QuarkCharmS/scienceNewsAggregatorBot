@@ -11,7 +11,7 @@ CLIENT = anthropic.Anthropic()
 MODEL = "claude-sonnet-4-5"
 
 
-def build_prompt(articles: list[dict], top_n: int, topic: str) -> str:
+def build_prompt(articles: list[dict], top_n: int, topic: str, bilingual: bool = True) -> str:
     articles_text = ""
     for i, article in enumerate(articles):
         articles_text += (
@@ -19,6 +19,34 @@ def build_prompt(articles: list[dict], top_n: int, topic: str) -> str:
             f"    Title: {article['title']}\n"
             f"    Summary: {article['summary'] or '(no summary)'}\n"
             f"    Link: {article['link']}\n\n"
+        )
+
+    if bilingual:
+        language_instructions = (
+            "For each selected article you must write content in BOTH Spanish and English:\n"
+            "- Spanish: everyday words only, answer \"why does this matter / why is this cool?\", no jargon without explanation.\n"
+            "- English: same style and quality as the Spanish version — plain, engaging, no dry academic phrasing.\n"
+            "- Both versions must avoid \"researchers found\" or \"the study shows\" — just tell the story directly."
+        )
+        task_step_2 = "For each, write a 2-3 sentence explanation in Spanish AND a 2-3 sentence explanation in English."
+        task_step_3 = "Translate the title to Spanish as well (keep the English original too)."
+        json_fields = (
+            "- \"title_es\": the article title translated to Spanish\n"
+            "- \"title_en\": the original article title in English\n"
+            "- \"explanation_es\": your 2-3 sentence plain-language explanation in Spanish\n"
+            "- \"explanation_en\": your 2-3 sentence plain-language explanation in English"
+        )
+    else:
+        language_instructions = (
+            "For each selected article write a plain-language explanation in English only:\n"
+            "- Everyday words, answer \"why does this matter / why is this cool?\", no jargon without explanation.\n"
+            "- Avoid \"researchers found\" or \"the study shows\" — just tell the story directly."
+        )
+        task_step_2 = "For each, write a 2-3 sentence plain-language explanation in English."
+        task_step_3 = "Keep the title in English — do not translate."
+        json_fields = (
+            "- \"title_en\": the original article title in English\n"
+            "- \"explanation_en\": your 2-3 sentence plain-language explanation in English"
         )
 
     return f"""You are a science communicator writing for a curious but non-technical audience — \
@@ -30,25 +58,19 @@ IMPORTANT: If an article is not clearly and directly related to these topics, do
 skip it entirely, even if it seems interesting. Off-topic articles (legal news, politics, lifestyle, \
 business, sports, food, entertainment) must never be included.
 
-For each selected article you must write content in BOTH Spanish and English:
-- Spanish: everyday words only, answer "why does this matter / why is this cool?", no jargon without explanation.
-- English: same style and quality as the Spanish version — plain, engaging, no dry academic phrasing.
-- Both versions must avoid "researchers found" or "the study shows" — just tell the story directly.
+{language_instructions}
 
 Below are {len(articles)} articles published today. Your task:
 1. Select the {top_n} most important articles that are strictly on-topic ({topic}).
-2. For each, write a 2-3 sentence explanation in Spanish AND a 2-3 sentence explanation in English.
-3. Translate the title to Spanish as well (keep the English original too).
+2. {task_step_2}
+3. {task_step_3}
 4. Assign one relevant emoji per article.
 5. If there are not enough on-topic articles to fill {top_n} slots, return fewer — do not pad with off-topic content.
 
 Return ONLY a JSON array with exactly {top_n} objects. Each object must have these fields:
 - "id": the integer index from the list above (e.g. 0, 3, 12)
 - "emoji": one emoji string
-- "title_es": the article title translated to Spanish
-- "title_en": the original article title in English
-- "explanation_es": your 2-3 sentence plain-language explanation in Spanish
-- "explanation_en": your 2-3 sentence plain-language explanation in English
+{json_fields}
 - "link": the original article link (copy exactly)
 - "source": the original source name (copy exactly)
 
@@ -58,12 +80,12 @@ Articles:
 {articles_text}"""
 
 
-def rank_and_summarize(articles: list[dict], top_n: int = 5, topic: str = "general science and technology") -> list[dict]:
+def rank_and_summarize(articles: list[dict], top_n: int = 5, topic: str = "general science and technology", bilingual: bool = True) -> list[dict]:
     """Send articles to Claude and get back the top top_n with explanations."""
     if not articles:
         raise ValueError("No articles provided to rank.")
 
-    prompt = build_prompt(articles, top_n, topic)
+    prompt = build_prompt(articles, top_n, topic, bilingual)
 
     try:
         message = CLIENT.messages.create(
@@ -95,7 +117,7 @@ def rank_and_summarize(articles: list[dict], top_n: int = 5, topic: str = "gener
         logger.warning("Claude returned %d articles (fewer than requested %d) — likely not enough on-topic content.", len(results), top_n)
 
     # Validate required fields
-    required = {"emoji", "title_es", "title_en", "explanation_es", "explanation_en", "link", "source"}
+    required = {"emoji", "title_es", "title_en", "explanation_es", "explanation_en", "link", "source"} if bilingual else {"emoji", "title_en", "explanation_en", "link", "source"}
     for item in results:
         missing = required - set(item.keys())
         if missing:
