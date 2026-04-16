@@ -111,16 +111,25 @@ def format_header(digest_date: date) -> str:
     return f"🔬 *Resumen Científico Diario — {date_str}*"
 
 
-def format_article(article: dict) -> str:
-    """Format a single article as a bilingual Telegram Markdown message."""
+def format_article(article: dict, english_only: bool = False) -> str:
+    """Format a single article as a Telegram Markdown message."""
     emoji = article.get("emoji", "📰")
-    title_es = _escape(article["title_es"])
     title_en = _escape(article["title_en"])
-    explanation_es = _escape(article["explanation_es"])
     explanation_en = _escape(article["explanation_en"])
     link = article["link"]
     source = _escape(article["source"])
 
+    if english_only:
+        return (
+            f"{emoji} *{title_en}*\n"
+            f"\n"
+            f"{explanation_en}\n"
+            f"\n"
+            f"[Read more]({link}) · _{source}_"
+        )
+
+    title_es = _escape(article["title_es"])
+    explanation_es = _escape(article["explanation_es"])
     return (
         f"{emoji} *{title_es}*\n"
         f"\n"
@@ -163,6 +172,7 @@ async def post_digest(
     channel_id: str,
     articles: list[dict],
     digest_date: date | None = None,
+    english_only: bool = False,
 ) -> None:
     """Post one message per article."""
     if digest_date is None:
@@ -172,7 +182,7 @@ async def post_digest(
 
     for i, article in enumerate(articles):
         await asyncio.sleep(MESSAGE_DELAY)
-        await _send_article(bot, channel_id, article, format_article(article))
+        await _send_article(bot, channel_id, article, format_article(article, english_only=english_only))
         logger.info("Posted article %d/%d to '%s'", i + 1, len(articles), channel_id)
 
     logger.info("Digest complete — %d messages posted to '%s'", len(articles), channel_id)

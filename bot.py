@@ -41,6 +41,7 @@ def _require_env(name: str) -> str:
 
 BOT_TOKEN = _require_env("TELEGRAM_BOT_TOKEN")
 CHANNEL_ID = _require_env("TELEGRAM_CHANNEL_ID")
+SOFTWARE_CHANNEL_ID = _require_env("TELEGRAM_SOFTWARE_CHANNEL_ID")
 
 
 def _get_last_run(f: pathlib.Path) -> date | None:
@@ -119,13 +120,13 @@ def run_tech_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 4, topic="artificial intelligence, machine learning, deep learning, computer science, technology products and research")
+        top_articles = rank_and_summarize(articles, top_n=top_n or 4, topic="artificial intelligence, machine learning, deep learning, computer science, technology products and research", bilingual=False)
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping.", exc)
         return
 
     try:
-        asyncio.run(post_digest(BOT_TOKEN, CHANNEL_ID, top_articles))
+        asyncio.run(post_digest(BOT_TOKEN, SOFTWARE_CHANNEL_ID, top_articles, english_only=True))
     except Exception as exc:
         logger.error("Failed to post tech digest to Telegram: %s", exc)
         return
@@ -145,13 +146,13 @@ def run_software_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 4, topic="software engineering, DevOps, cloud computing, programming languages, developer tools, software architecture, open source, platform engineering")
+        top_articles = rank_and_summarize(articles, top_n=top_n or 4, topic="software engineering, DevOps, cloud computing, programming languages, developer tools, software architecture, open source, platform engineering", bilingual=False)
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping.", exc)
         return
 
     try:
-        asyncio.run(post_digest(BOT_TOKEN, CHANNEL_ID, top_articles))
+        asyncio.run(post_digest(BOT_TOKEN, SOFTWARE_CHANNEL_ID, top_articles, english_only=True))
     except Exception as exc:
         logger.error("Failed to post software digest to Telegram: %s", exc)
         return
