@@ -41,7 +41,6 @@ def _require_env(name: str) -> str:
 
 BOT_TOKEN = _require_env("TELEGRAM_BOT_TOKEN")
 CHANNEL_ID = _require_env("TELEGRAM_CHANNEL_ID")
-SOFTWARE_CHANNEL_ID = _require_env("TELEGRAM_SOFTWARE_CHANNEL_ID")
 
 
 def _get_last_run(f: pathlib.Path) -> date | None:
@@ -112,6 +111,7 @@ def run_phys_digest(top_n: int | None = None) -> None:
 
 def run_tech_digest(top_n: int | None = None) -> None:
     """Fetch, rank (top 4), and post the CS/AI/tech digest."""
+    software_channel = _require_env("TELEGRAM_SOFTWARE_CHANNEL_ID")
     logger.info("Starting CS/AI/tech digest run...")
 
     articles = filter_unseen(fetch_all_articles(feeds=TECH_AI_FEEDS))
@@ -126,7 +126,7 @@ def run_tech_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        asyncio.run(post_digest(BOT_TOKEN, SOFTWARE_CHANNEL_ID, top_articles, english_only=True))
+        asyncio.run(post_digest(BOT_TOKEN, software_channel, top_articles, english_only=True))
     except Exception as exc:
         logger.error("Failed to post tech digest to Telegram: %s", exc)
         return
@@ -138,6 +138,7 @@ def run_tech_digest(top_n: int | None = None) -> None:
 
 def run_software_digest(top_n: int | None = None) -> None:
     """Fetch, rank (top 4), and post the software/devops morning digest."""
+    software_channel = _require_env("TELEGRAM_SOFTWARE_CHANNEL_ID")
     logger.info("Starting software digest run...")
 
     articles = filter_unseen(fetch_all_articles(feeds=SOFTWARE_FEEDS))
@@ -152,7 +153,7 @@ def run_software_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        asyncio.run(post_digest(BOT_TOKEN, SOFTWARE_CHANNEL_ID, top_articles, english_only=True))
+        asyncio.run(post_digest(BOT_TOKEN, software_channel, top_articles, english_only=True))
     except Exception as exc:
         logger.error("Failed to post software digest to Telegram: %s", exc)
         return
