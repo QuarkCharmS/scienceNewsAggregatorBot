@@ -1,0 +1,56 @@
+name: Anthropology Digest
+
+on:
+  schedule:
+    - cron: '30 14 * * *'   # 2:30 PM UTC
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of articles to pick (overrides default of 3)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bot-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run anthropology digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: |
+          COUNT="${{ github.event.inputs.count }}"
+          if [ -n "$COUNT" ] && [ "$COUNT" != "0" ]; then
+            python bot.py --anthro --count "$COUNT"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python bot.py --anthro --count 2
+          else
+            python bot.py --anthro --count 3
+          fi
+
+      - name: Commit state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f .seen_articles.json .last_run_anthro 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: update anthropology digest state [skip ci]"
+          git push
