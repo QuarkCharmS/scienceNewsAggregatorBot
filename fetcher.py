@@ -53,6 +53,26 @@ TECH_AI_FEEDS = {
     "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
 }
 
+ECOLOGY_FEEDS = {
+    # News & Journalism
+    "Mongabay": "https://news.mongabay.com/feed",
+    "The Guardian Ecology": "https://www.theguardian.com/environment/ecology/rss",
+    "The Guardian Wildlife": "https://www.theguardian.com/environment/wildlife/rss",
+    # Research & Science
+    "ScienceDaily Ecology": "https://www.sciencedaily.com/rss/earth_climate/ecology.xml",
+    "ScienceDaily Biodiversity": "https://www.sciencedaily.com/rss/earth_climate/biodiversity.xml",
+    "ScienceDaily Plants & Animals": "https://www.sciencedaily.com/rss/plants_animals/ecology.xml",
+    "Phys.org Ecology": "https://phys.org/rss-feed/biology-news/ecology-evolution/",
+    # Journals & Academic
+    "Applied Ecologists Blog": "https://appliedecologistsblog.com/feed",
+    "Oikos Journal": "https://oikosjournal.org/rss.xml",
+    "Ecography": "https://ecography.org/rss.xml",
+    "Methods in Ecology & Evolution": "https://feeds.feedburner.com/wordpress/GVwd",
+    # Conservation & Wildlife
+    "The Wildlife Society": "https://wildlife.org/feed",
+    "IUCN Red List": "https://www.iucnredlist.org/feed",
+}
+
 ANTHROPOLOGY_FEEDS = {
     # General Anthropology
     "Anthropology News": "https://www.rsscatalog.com/Anthropology",

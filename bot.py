@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from fetcher import fetch_all_articles, PHYSICS_ASTRONOMY_FEEDS, TECH_AI_FEEDS, SOFTWARE_FEEDS, ANTHROPOLOGY_FEEDS
+from fetcher import fetch_all_articles, PHYSICS_ASTRONOMY_FEEDS, TECH_AI_FEEDS, SOFTWARE_FEEDS, ANTHROPOLOGY_FEEDS, ECOLOGY_FEEDS
 from ai import rank_and_summarize, translate_apod
 from apod import fetch_apod
 from publisher import post_digest, post_apod
@@ -28,6 +28,7 @@ LAST_RUN_FILE = pathlib.Path(__file__).parent / ".last_run"
 LAST_RUN_PHYS_FILE = pathlib.Path(__file__).parent / ".last_run_phys"
 LAST_RUN_TECH_FILE = pathlib.Path(__file__).parent / ".last_run_tech"
 LAST_RUN_ANTHRO_FILE = pathlib.Path(__file__).parent / ".last_run_anthro"
+LAST_RUN_ECOLOGY_FILE = pathlib.Path(__file__).parent / ".last_run_ecology"
 LAST_RUN_APOD_FILE = pathlib.Path(__file__).parent / ".last_run_apod"
 LAST_RUN_SOFTWARE_FILE = pathlib.Path(__file__).parent / ".last_run_software"
 
@@ -109,6 +110,33 @@ def run_phys_digest(top_n: int | None = None) -> None:
     mark_sent(top_articles)
     _set_last_run(LAST_RUN_PHYS_FILE)
     logger.info("Physics & astronomy digest completed successfully.")
+
+
+def run_ecology_digest(top_n: int | None = None) -> None:
+    """Fetch, rank (top 2), and post the ecology digest."""
+    channel = _require_env("TELEGRAM_CHANNEL_ID")
+    logger.info("Starting ecology digest run...")
+
+    articles = filter_unseen(fetch_all_articles(feeds=ECOLOGY_FEEDS))
+    if not articles:
+        logger.warning("No new ecology articles after deduplication — skipping.")
+        return
+
+    try:
+        top_articles = rank_and_summarize(articles, top_n=top_n or 2, topic="ecology, biodiversity, wildlife, conservation, ecosystems, species, environmental science, nature")
+    except Exception as exc:
+        logger.error("Claude processing failed: %s — skipping.", exc)
+        return
+
+    try:
+        asyncio.run(post_digest(BOT_TOKEN, channel, top_articles))
+    except Exception as exc:
+        logger.error("Failed to post ecology digest to Telegram: %s", exc)
+        return
+
+    mark_sent(top_articles)
+    _set_last_run(LAST_RUN_ECOLOGY_FILE)
+    logger.info("Ecology digest completed successfully.")
 
 
 def run_anthro_digest(top_n: int | None = None) -> None:
@@ -258,6 +286,13 @@ if __name__ == "__main__":
     elif "--phys-check" in args:
         run_if_missed(lambda: run_phys_digest(top_n=count), LAST_RUN_PHYS_FILE, "Physics & astronomy digest")
 
+    elif "--ecology" in args:
+        logger.info("Running ecology digest immediately (--ecology).")
+        run_ecology_digest(top_n=count)
+
+    elif "--ecology-check" in args:
+        run_if_missed(lambda: run_ecology_digest(top_n=count), LAST_RUN_ECOLOGY_FILE, "Ecology digest")
+
     elif "--anthro" in args:
         logger.info("Running anthropology digest immediately (--anthro).")
         run_anthro_digest(top_n=count)
@@ -294,6 +329,8 @@ if __name__ == "__main__":
         print("  python bot.py --phys-check   Catch-up: physics digest if not run today")
         print("  python bot.py --tech         Run CS/AI/tech digest immediately (2 PM)")
         print("  python bot.py --tech-check   Catch-up: tech digest if not run today")
+        print("  python bot.py --ecology        Run ecology digest immediately (3 PM)")
+        print("  python bot.py --ecology-check  Catch-up: ecology digest if not run today")
         print("  python bot.py --anthro         Run anthropology digest immediately (2:30 PM)")
         print("  python bot.py --anthro-check   Catch-up: anthropology digest if not run today")
         print("  python bot.py --software       Run software digest immediately (10 AM)")
