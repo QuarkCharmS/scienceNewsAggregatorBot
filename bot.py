@@ -40,7 +40,6 @@ def _require_env(name: str) -> str:
 
 
 BOT_TOKEN = _require_env("TELEGRAM_BOT_TOKEN")
-CHANNEL_ID = _require_env("TELEGRAM_CHANNEL_ID")
 
 
 def _get_last_run(f: pathlib.Path) -> date | None:
@@ -56,6 +55,7 @@ def _set_last_run(f: pathlib.Path) -> None:
 
 def run_digest(top_n: int | None = None) -> None:
     """Fetch, rank, and post the daily science digest."""
+    channel = _require_env("TELEGRAM_CHANNEL_ID")
     logger.info("Starting daily digest run...")
 
     # 1. Fetch and deduplicate
@@ -73,7 +73,7 @@ def run_digest(top_n: int | None = None) -> None:
 
     # 3. Post digest to Telegram
     try:
-        asyncio.run(post_digest(BOT_TOKEN, CHANNEL_ID, top_articles))
+        asyncio.run(post_digest(BOT_TOKEN, channel, top_articles))
     except Exception as exc:
         logger.error("Failed to post digest to Telegram: %s", exc)
         return
@@ -85,6 +85,7 @@ def run_digest(top_n: int | None = None) -> None:
 
 def run_phys_digest(top_n: int | None = None) -> None:
     """Fetch, rank (top 3), and post the physics & astronomy digest."""
+    channel = _require_env("TELEGRAM_CHANNEL_ID")
     logger.info("Starting physics & astronomy digest run...")
 
     articles = filter_unseen(fetch_all_articles(feeds=PHYSICS_ASTRONOMY_FEEDS))
@@ -99,7 +100,7 @@ def run_phys_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        asyncio.run(post_digest(BOT_TOKEN, CHANNEL_ID, top_articles))
+        asyncio.run(post_digest(BOT_TOKEN, channel, top_articles))
     except Exception as exc:
         logger.error("Failed to post physics digest to Telegram: %s", exc)
         return
@@ -165,11 +166,12 @@ def run_software_digest(top_n: int | None = None) -> None:
 
 def run_apod() -> None:
     """Fetch and post today's APOD."""
+    channel = _require_env("TELEGRAM_CHANNEL_ID")
     logger.info("Starting APOD run...")
     try:
         apod = fetch_apod()
         translation = translate_apod(apod)
-        asyncio.run(post_apod(BOT_TOKEN, CHANNEL_ID, apod, translation))
+        asyncio.run(post_apod(BOT_TOKEN, channel, apod, translation))
     except Exception as exc:
         logger.error("Failed to post APOD: %s", exc)
         return

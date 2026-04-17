@@ -36,9 +36,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           TELEGRAM_SOFTWARE_CHANNEL_ID: ${{ secrets.TELEGRAM_SOFTWARE_CHANNEL_ID }}
-          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
         run: |
           COUNT="${{ github.event.inputs.count }}"
           if [ -n "$COUNT" ] && [ "$COUNT" != "0" ]; then
