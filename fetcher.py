@@ -53,6 +53,23 @@ TECH_AI_FEEDS = {
     "VentureBeat AI": "https://venturebeat.com/category/ai/feed/",
 }
 
+ANTHROPOLOGY_FEEDS = {
+    # General Anthropology
+    "Anthropology News": "https://www.rsscatalog.com/Anthropology",
+    "Perspectives in Anthropology": "https://perspectivesinanthropology.com/feed/",
+    # Human Evolution & Biological Anthropology
+    "ScienceDaily Human Evolution": "https://www.sciencedaily.com/rss/fossils_ruins/human_evolution.xml",
+    "ScienceDaily Early Humans": "https://www.sciencedaily.com/rss/fossils_ruins/early_humans.xml",
+    "ScienceDaily Fossils & Ruins": "https://www.sciencedaily.com/rss/fossils_ruins.xml",
+    "The Leakey Foundation": "https://leakeyfoundation.org/feed/",
+    "Phys.org Evolution": "https://phys.org/rss-feed/biology-news/evolution/",
+    # Archaeology
+    "Archaeology Magazine": "https://archaeology.org/feed/",
+    "Ancient Origins": "https://feeds.feedburner.com/AncientOrigins",
+    "ScienceDaily Archaeology": "https://www.sciencedaily.com/rss/fossils_ruins/archaeology.xml",
+    "Biblical Archaeology Society": "https://biblicalarchaeology.org/feed",
+}
+
 SOFTWARE_FEEDS = {
     # Software / DevOps
     "The New Stack": "https://thenewstack.io/feed",
