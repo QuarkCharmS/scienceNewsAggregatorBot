@@ -68,7 +68,7 @@ def run_digest(top_n: int | None = None) -> None:
 
     # 2. Ask Claude to pick and explain the top 5
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 5, topic="general science, biology, medicine, chemistry, environment, climate, health, nature")
+        top_articles = rank_and_summarize(articles, top_n=top_n or 4, topic="general science, biology, medicine, chemistry, environment, climate, health, nature")
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping digest.", exc)
         return
@@ -123,7 +123,7 @@ def run_ecology_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 2, topic="ecology, biodiversity, wildlife, conservation, ecosystems, species, environmental science, nature")
+        top_articles = rank_and_summarize(articles, top_n=top_n or 1, topic="ecology, biodiversity, wildlife, conservation, ecosystems, species, environmental science, nature")
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping.", exc)
         return
@@ -150,7 +150,7 @@ def run_anthro_digest(top_n: int | None = None) -> None:
         return
 
     try:
-        top_articles = rank_and_summarize(articles, top_n=top_n or 3, topic="human anthropology, human evolution, biological anthropology, archaeology, early humans, fossils, ancient civilisations, paleoanthropology")
+        top_articles = rank_and_summarize(articles, top_n=top_n or 1, topic="human anthropology, human evolution, biological anthropology, archaeology, early humans, fossils, ancient civilisations, paleoanthropology")
     except Exception as exc:
         logger.error("Claude processing failed: %s — skipping.", exc)
         return

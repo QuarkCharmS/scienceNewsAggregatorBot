@@ -42,9 +42,9 @@ jobs:
           if [ -n "$COUNT" ] && [ "$COUNT" != "0" ]; then
             python bot.py --ecology --count "$COUNT"
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            python bot.py --ecology --count 2
+            python bot.py --ecology --count 1
           else
-            python bot.py --ecology --count 2
+            python bot.py --ecology --count 1
           fi
 
       - name: Commit state
