@@ -5,6 +5,7 @@ import logging
 import os
 import pathlib
 import sys
+import time
 from datetime import date
 
 from dotenv import load_dotenv
@@ -221,19 +222,28 @@ def run_software_digest(top_n: int | None = None) -> None:
 
 
 def run_apod() -> None:
-    """Fetch and post today's APOD."""
+    """Fetch and post today's APOD. Retries up to 5 times on any failure."""
     channel = _require_env("TELEGRAM_CHANNEL_ID")
     logger.info("Starting APOD run...")
-    try:
-        apod = fetch_apod()
-        translation = translate_apod(apod)
-        asyncio.run(post_apod(BOT_TOKEN, channel, apod, translation))
-    except Exception as exc:
-        logger.error("Failed to post APOD: %s", exc)
-        return
 
-    _set_last_run(LAST_RUN_APOD_FILE)
-    logger.info("APOD posted successfully.")
+    last_exc: Exception | None = None
+    for attempt in range(1, 6):
+        try:
+            apod = fetch_apod()
+            translation = translate_apod(apod)
+            asyncio.run(post_apod(BOT_TOKEN, channel, apod, translation))
+            _set_last_run(LAST_RUN_APOD_FILE)
+            logger.info("APOD posted successfully.")
+            return
+        except Exception as exc:
+            last_exc = exc
+            logger.warning("APOD attempt %d/5 failed: %s", attempt, exc)
+            if attempt < 5:
+                logger.info("Retrying in 5 seconds...")
+                time.sleep(5)
+
+    logger.error("All 5 APOD attempts failed. Last error: %s", last_exc)
+    sys.exit(1)
 
 
 def run_if_missed(run_fn, last_run_file: pathlib.Path, label: str) -> None:
