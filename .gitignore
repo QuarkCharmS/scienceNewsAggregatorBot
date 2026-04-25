@@ -1,3 +1,5 @@
+.gitignore
+CLAUDE.md
 # Secrets — never commit
 .env
 
