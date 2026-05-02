@@ -23,6 +23,8 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
+# httpx logs full request URLs which contain the Telegram bot token — suppress it
+logging.getLogger("httpx").setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 
 LAST_RUN_FILE = pathlib.Path(__file__).parent / ".last_run"
