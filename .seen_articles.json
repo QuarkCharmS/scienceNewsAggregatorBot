@@ -1,20 +1,4 @@
 {
-  "https://github.github.com/gh-stack/": "2026-04-14",
-  "https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/": "2026-04-14",
-  "https://www.infoq.com/news/2026/04/airbnd-opentelemetry-vmagent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-14",
-  "https://aws.amazon.com/blogs/devops/troubleshooting-environment-with-ai-analysis-in-aws-elastic-beanstalk/": "2026-04-14",
-  "https://www.theverge.com/ai-artificial-intelligence/911579/google-synthid-ai-watermarking-system-reverse-engineered": "2026-04-14",
-  "https://arstechnica.com/gadgets/2026/04/google-shoehorned-rust-into-pixel-10-modem-to-make-legacy-code-safer/": "2026-04-14",
-  "https://deepmind.google/blog/gemini-robotics-er-1-6/": "2026-04-14",
-  "https://arxiv.org/abs/2604.09574": "2026-04-14",
-  "https://www.space.com/astronomy/moon/the-moons-oldest-and-darkest-craters-could-be-hiding-the-most-water-ice-thats-good-news-for-future-astronauts": "2026-04-14",
-  "https://www.universetoday.com/articles/saturns-magnetic-shield-is-not-where-anyone-expected-it-to-be": "2026-04-14",
-  "https://www.universetoday.com/articles/two-monsters-one-galaxy-and-a-collision-100-years-away": "2026-04-14",
-  "https://www.sciencedaily.com/releases/2026/04/260414075642.htm": "2026-04-14",
-  "https://www.sciencedaily.com/releases/2026/04/260414075644.htm": "2026-04-14",
-  "https://www.sciencedaily.com/releases/2026/04/260413232421.htm": "2026-04-14",
-  "https://www.sciencedaily.com/releases/2026/04/260414075637.htm": "2026-04-14",
-  "https://www.nature.com/articles/s41586-026-10493-9": "2026-04-14",
   "https://github.com/openssl/openssl/releases/tag/openssl-4.0.0": "2026-04-15",
   "https://www.infoq.com/news/2026/04/claude-code-linux-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-15",
   "https://github.blog/security/application-security/how-exposed-is-your-code-find-out-in-minutes-for-free/": "2026-04-15",
@@ -406,5 +390,9 @@
   "https://www.sciencedaily.com/releases/2026/05/260514084421.htm": "2026-05-14",
   "https://www.sciencedaily.com/releases/2026/05/260513221818.htm": "2026-05-14",
   "https://www.sciencedaily.com/releases/2026/05/260513221751.htm": "2026-05-14",
-  "https://www.nature.com/articles/d41586-026-01538-0": "2026-05-14"
+  "https://www.nature.com/articles/d41586-026-01538-0": "2026-05-14",
+  "https://thenewstack.io/python-rust-ai-sidecar/": "2026-05-15",
+  "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/": "2026-05-15",
+  "https://aws.amazon.com/blogs/devops/simplify-cross-account-and-cross-region-stack-output-references-with-aws-cloudformation-and-cdks-new-fngetstackoutput/": "2026-05-15",
+  "https://www.infoq.com/news/2026/05/solidjs-2-async/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-15"
 }
