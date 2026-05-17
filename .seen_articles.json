@@ -1,14 +1,4 @@
 {
-  "https://www.infoq.com/news/2026/04/opentelemetry-declarative-config/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-16",
-  "https://devblogs.microsoft.com/devops/one-click-security-scanning-and-org-wide-alert-triage-come-to-advanced-security/": "2026-04-16",
-  "https://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-16",
-  "https://www.infoq.com/news/2026/04/zendesk-absorption-capacity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-16",
-  "https://www.infoq.com/news/2026/04/turboquant-compression-kv-cache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-16",
-  "https://thenewstack.io/google-axion-kubernetes-arm/": "2026-04-16",
-  "https://arstechnica.com/gadgets/2026/04/totalrecall-reloaded-tool-finds-a-side-entrance-to-windows-11s-recall-database/": "2026-04-16",
-  "https://www.theverge.com/ai-artificial-intelligence/912997/character-ai-books-mode": "2026-04-16",
-  "https://arxiv.org/abs/2604.11978": "2026-04-16",
-  "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/": "2026-04-16",
   "https://skyandtelescope.org/astronomy-news/what-were-the-flashes-that-artemis-2-astronauts-saw/": "2026-04-17",
   "https://earthsky.org/space/see-and-hear-galaxies-evolving-new-simulations/": "2026-04-17",
   "https://earthsky.org/sun/sun-news-activity-solar-flare-cme-aurora-updates/": "2026-04-17",
@@ -411,5 +401,9 @@
   "https://www.universetoday.com/articles/bizarre-venus-surface-formations-puzzle-planetary-scientists": "2026-05-16",
   "https://www.sciencedaily.com/releases/2026/05/260516034136.htm": "2026-05-16",
   "https://www.sciencedaily.com/releases/2026/05/260515234759.htm": "2026-05-16",
-  "https://www.sciencedaily.com/releases/2026/05/260515233325.htm": "2026-05-16"
+  "https://www.sciencedaily.com/releases/2026/05/260515233325.htm": "2026-05-16",
+  "https://thenewstack.io/github-copilot-desktop-app/": "2026-05-17",
+  "https://crates.io/crates/zerostack/1.0.0": "2026-05-17",
+  "https://www.infoq.com/news/2026/05/monzo-data-mesh/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-17",
+  "https://www.infoq.com/news/2026/05/ubuntu-on-device-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-17"
 }
