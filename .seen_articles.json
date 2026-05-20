@@ -1,18 +1,4 @@
 {
-  "https://thenewstack.io/ai-agent-harness-pricing-split/": "2026-04-19",
-  "https://samhenri.gold/blog/20260418-claude-design/": "2026-04-19",
-  "https://www.infoq.com/news/2026/04/deepmind-aletheia-agentic-math/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-19",
-  "https://www.infoq.com/news/2026/04/aws-devops-agent-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-19",
-  "https://www.wired.com/story/best-meta-glasses/": "2026-04-19",
-  "https://www.theverge.com/tech/914085/keychron-q1-v5-ultra-8k-zmk-mechanical-keyboards-review": "2026-04-19",
-  "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years": "2026-04-19",
-  "https://www.theguardian.com/environment/2026/apr/19/hidden-world-of-female-birdsong-book": "2026-04-19",
-  "https://earthsky.org/space/laws-of-gravity-hold-across-the-cosmos/": "2026-04-19",
-  "https://earthsky.org/space/black-holes-simulations-light-up-the-dark/": "2026-04-19",
-  "https://astrobites.org/2026/04/18/a-clash-of-two-titans/": "2026-04-19",
-  "https://www.sciencedaily.com/releases/2026/04/260419054825.htm": "2026-04-19",
-  "https://www.sciencedaily.com/releases/2026/04/260419054821.htm": "2026-04-19",
-  "https://www.sciencedaily.com/releases/2026/04/260417224507.htm": "2026-04-19",
   "https://thenewstack.io/smartbear-swagger-ai-api-management/": "2026-04-20",
   "https://www.infoq.com/articles/building-trpc-api-typescript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-20",
   "https://www.infoq.com/podcasts/engineering-stable-secure-scalable-platforms/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-20",
@@ -398,5 +384,9 @@
   "https://www.sciencedaily.com/releases/2026/05/260518041445.htm": "2026-05-19",
   "https://www.sciencedaily.com/releases/2026/05/260518041429.htm": "2026-05-19",
   "https://arxiv.org/abs/2605.16313": "2026-05-19",
-  "https://arxiv.org/abs/2605.16323": "2026-05-19"
+  "https://arxiv.org/abs/2605.16323": "2026-05-19",
+  "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage": "2026-05-20",
+  "https://twitter.com/github/status/2056884788179726685": "2026-05-20",
+  "https://www.infoq.com/news/2026/05/pip-261-dependency-cooldowns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-20",
+  "https://aws.amazon.com/blogs/devops/automate-root-cause-analysis-across-datadog-and-elasticsearch-with-aws-devops-agent/": "2026-05-20"
 }
