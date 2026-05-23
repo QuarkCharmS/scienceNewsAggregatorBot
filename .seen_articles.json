@@ -1,21 +1,4 @@
 {
-  "https://thenewstack.io/github-copilot-signups-paused/": "2026-04-22",
-  "https://www.infoq.com/news/2026/04/cloudflare-sandboxes-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-22",
-  "https://www.infoq.com/articles/sovereign-fault-domains-cloud-resilience/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-22",
-  "https://www.infoq.com/news/2026/04/pnpm-11-rc-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-22",
-  "https://www.theverge.com/tech/916681/meta-ai-agents-employee-tracking": "2026-04-22",
-  "https://arxiv.org/abs/2604.18724": "2026-04-22",
-  "https://arxiv.org/abs/2604.18805": "2026-04-22",
-  "https://arxiv.org/abs/2604.18587": "2026-04-22",
-  "https://www.sciencedaily.com/releases/2026/04/260421042757.htm": "2026-04-22",
-  "https://news.mongabay.com/2026/04/oil-spill-continues-in-gulf-of-mexico-vulnerable-habitats-while-pemex-admits-fault/": "2026-04-22",
-  "https://skyandtelescope.org/astronomy-news/the-nancy-grace-roman-space-telescope-is-ready-to-fly/": "2026-04-22",
-  "https://skyandtelescope.org/astronomy-news/sun-observing-satellite-uses-artificial-eclipse-to-capture-the-solar-wind/": "2026-04-22",
-  "https://earthsky.org/space/black-hole-cygnus-x-1-dancing-jets/": "2026-04-22",
-  "https://www.sciencedaily.com/releases/2026/04/260422044618.htm": "2026-04-22",
-  "https://www.sciencedaily.com/releases/2026/04/260422044617.htm": "2026-04-22",
-  "https://www.sciencedaily.com/releases/2026/04/260421233649.htm": "2026-04-22",
-  "https://www.nature.com/articles/s41586-026-10548-x": "2026-04-22",
   "https://crawshaw.io/blog/building-a-cloud": "2026-04-23",
   "https://www.infoq.com/news/2026/04/dropbox-reduces-git-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-23",
   "https://www.infoq.com/news/2026/04/observability-telemetry/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-23",
@@ -403,5 +386,9 @@
   "https://www.sciencedaily.com/releases/2026/05/260522031001.htm": "2026-05-22",
   "https://www.sciencedaily.com/releases/2026/05/260522030853.htm": "2026-05-22",
   "https://www.sciencedaily.com/releases/2026/05/260521072402.htm": "2026-05-22",
-  "https://www.nature.com/articles/d41586-026-01660-z": "2026-05-22"
+  "https://www.nature.com/articles/d41586-026-01660-z": "2026-05-22",
+  "https://thenewstack.io/jetbrains-independent-ai-coding/": "2026-05-23",
+  "https://github.com/yt-dlp/yt-dlp/issues/16766": "2026-05-23",
+  "https://www.infoq.com/news/2026/05/google-cross-engine-iceberg/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-23",
+  "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row/": "2026-05-23"
 }
