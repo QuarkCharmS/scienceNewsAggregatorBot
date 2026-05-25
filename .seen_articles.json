@@ -1,21 +1,4 @@
 {
-  "https://thenewstack.io/openai-privacy-filter-pii/": "2026-04-24",
-  "https://thenewstack.io/kyverno-cncf-graduation-interview/": "2026-04-24",
-  "https://www.infoq.com/news/2026/04/vault-2-0-ibm-identity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-24",
-  "https://devblogs.microsoft.com/devops/axios-npm-supply-chain-compromise-guidance-for-azure-pipelines-customers/": "2026-04-24",
-  "https://www.technologyreview.com/2026/04/24/1136352/health-care-ai-dont-know-actually-helps-patients/": "2026-04-24",
-  "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip": "2026-04-24",
-  "https://arxiv.org/abs/2604.20995": "2026-04-24",
-  "https://arxiv.org/abs/2604.19835": "2026-04-24",
-  "https://www.sciencedaily.com/releases/2026/04/260423031540.htm": "2026-04-24",
-  "https://phys.org/news/2026-04-amazon-recovery-masks-diversity-loss.html": "2026-04-24",
-  "https://skyandtelescope.org/astronomy-news/catching-the-earliest-stars-in-the-universe/": "2026-04-24",
-  "https://www.space.com/astronomy/asteroids/famous-asteroid-ryugu-may-have-been-bombarded-by-a-swarm-of-tiny-space-rocks-1-000-years-ago": "2026-04-24",
-  "https://www.universetoday.com/articles/interstellar-comet-3iatlas-left-a-trail-of-methane-in-its-wake": "2026-04-24",
-  "https://www.sciencedaily.com/releases/2026/04/260424024002.htm": "2026-04-24",
-  "https://www.sciencedaily.com/releases/2026/04/260423031547.htm": "2026-04-24",
-  "https://arxiv.org/abs/2604.20885": "2026-04-24",
-  "https://www.nature.com/articles/d41586-026-01282-5": "2026-04-24",
   "https://www.infoq.com/news/2026/04/cache-parallelism-cloudflare/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-25",
   "https://www.infoq.com/news/2026/04/yelp-cassandra-upgrade/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-25",
   "https://github.com/libsdl-org/SDL/pull/15377": "2026-04-25",
@@ -402,5 +385,9 @@
   "https://www.space.com/astronomy/exoplanets/the-most-common-type-of-planet-in-the-galaxy-may-not-look-anything-like-earth-on-the-inside": "2026-05-24",
   "https://www.sciencedaily.com/releases/2026/05/260523103914.htm": "2026-05-24",
   "https://www.sciencedaily.com/releases/2026/05/260523103912.htm": "2026-05-24",
-  "https://www.sciencedaily.com/releases/2026/05/260523103903.htm": "2026-05-24"
+  "https://www.sciencedaily.com/releases/2026/05/260523103903.htm": "2026-05-24",
+  "https://thenewstack.io/jaeger-clickhouse-storage-backend/": "2026-05-25",
+  "https://seriot.ch/computation/jira.html": "2026-05-25",
+  "https://www.infoq.com/articles/schema-proliferation-problem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-25",
+  "https://www.infoq.com/news/2026/05/node-js-file-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-25"
 }
