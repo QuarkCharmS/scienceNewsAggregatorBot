@@ -1,21 +1,4 @@
 {
-  "https://thenewstack.io/ai-codebase-maturity-model/": "2026-04-27",
-  "https://thenewstack.io/multi-cloud-blind-spots/": "2026-04-27",
-  "https://www.infoq.com/news/2026/04/gitlab-flatrate-view-ai-access/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-27",
-  "https://aws.amazon.com/blogs/devops/aws-transform-custom-enterprise-code-modernization-with-the-learn-scale-improve-flywheel/": "2026-04-27",
-  "https://www.technologyreview.com/2026/04/27/1136438/the-download-deepseek-v4-ai-world-models/": "2026-04-27",
-  "https://www.wired.com/story/david-silver-ai-ineffable-intelligence-reinforcement-learning/": "2026-04-27",
-  "https://www.theverge.com/ai-artificial-intelligence/919028/canva-magic-layers-ai-replacing-palestine": "2026-04-27",
-  "https://news.mit.edu/2026/faster-way-to-estimate-ai-power-consumption-0427": "2026-04-27",
-  "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-egypt/egyptian-stela-depicts-tiberius-as-pharaoh/": "2026-04-27",
-  "https://news.mongabay.com/2026/04/peru-bets-on-bamboo-to-restore-nature-in-its-main-coca-growing-region/": "2026-04-27",
-  "https://skyandtelescope.org/astronomy-news/voyager-1-shuts-down-another-instrument/": "2026-04-27",
-  "https://www.universetoday.com/articles/a-cosmic-survey-reveals-the-universes-hidden-side": "2026-04-27",
-  "https://www.quantamagazine.org/physicists-discover-the-most-complex-forms-of-ice-yet-20260427/": "2026-04-27",
-  "https://www.sciencedaily.com/releases/2026/04/260427050613.htm": "2026-04-27",
-  "https://www.sciencedaily.com/releases/2026/04/260427050554.htm": "2026-04-27",
-  "https://www.sciencedaily.com/releases/2026/04/260426012317.htm": "2026-04-27",
-  "https://www.nature.com/articles/d41586-026-01283-4": "2026-04-27",
   "https://thenewstack.io/github-copilot-usage-billing/": "2026-04-28",
   "https://thenewstack.io/open-source-digital-autonomy/": "2026-04-28",
   "https://www.infoq.com/articles/ai-code-guardian/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-28",
@@ -401,5 +384,9 @@
   "https://www.sciencedaily.com/releases/2026/05/260526233433.htm": "2026-05-27",
   "https://www.sciencedaily.com/releases/2026/05/260526022006.htm": "2026-05-27",
   "https://www.sciencedaily.com/releases/2026/05/260526022002.htm": "2026-05-27",
-  "https://www.nature.com/articles/d41586-026-01382-2": "2026-05-27"
+  "https://www.nature.com/articles/d41586-026-01382-2": "2026-05-27",
+  "https://www.infoq.com/news/2026/05/azure-linux-4-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-28",
+  "https://www.infoq.com/articles/adaptive-hedged-requests-p99-latency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-28",
+  "https://www.infoq.com/news/2026/05/cloudflare-claude-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-28",
+  "https://aws.amazon.com/blogs/devops/how-aws-devops-agent-uses-multi-agent-reasoning-to-find-root-causes/": "2026-05-28"
 }
