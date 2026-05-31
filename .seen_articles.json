@@ -1,21 +1,4 @@
 {
-  "https://thenewstack.io/warp-open-source-client/": "2026-04-30",
-  "https://simonwillison.net/2026/Apr/30/zig-anti-ai/": "2026-04-30",
-  "https://www.infoq.com/presentations/docdb-online-database/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-30",
-  "https://www.infoq.com/news/2026/04/dropbox-tiered-compaction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-04-30",
-  "https://spectrum.ieee.org/ai-cyberattacks-memory-safe-code": "2026-04-30",
-  "https://arxiv.org/abs/2604.26091": "2026-04-30",
-  "https://arxiv.org/abs/2604.26211": "2026-04-30",
-  "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429": "2026-04-30",
-  "https://archaeology.org/news/2026/04/29/maya-site-discovered-on-mexicos-yucatan-peninsula/": "2026-04-30",
-  "https://news.mongabay.com/2026/04/inside-the-fight-to-save-the-little-known-galapagos-petrel/": "2026-04-30",
-  "https://skyandtelescope.org/astronomy-news/interstellar-comet-3i-atlas-is-ancient/": "2026-04-30",
-  "https://earthsky.org/space/falcon-rocket-will-hit-the-moon-august-5/": "2026-04-30",
-  "https://www.universetoday.com/articles/a-new-quasi-1d-state-of-matter-could-be-hiding-inside-ice-giant-planets": "2026-04-30",
-  "https://www.sciencedaily.com/releases/2026/04/260430032411.htm": "2026-04-30",
-  "https://www.sciencedaily.com/releases/2026/04/260429232851.htm": "2026-04-30",
-  "https://www.sciencedaily.com/releases/2026/04/260429102025.htm": "2026-04-30",
-  "https://www.nature.com/articles/d41586-026-01288-z": "2026-04-30",
   "https://thenewstack.io/anthropics-claude-security-beta/": "2026-05-01",
   "https://www.infoq.com/news/2026/05/vitest-4-1-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-01",
   "https://www.infoq.com/articles/securing-autonomous-ai-agents-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-01",
@@ -394,5 +377,9 @@
   "https://skyandtelescope.org/astronomy-news/nasa-brings-its-lunar-ambitions-into-focus-with-moon-base-missions/": "2026-05-30",
   "https://astrobites.org/2026/05/30/detecting-neutrinos-with-radiowaves/": "2026-05-30",
   "https://www.universetoday.com/articles/who-you-send-to-the-moon-matters-more-than-you-think": "2026-05-30",
-  "https://www.sciencedaily.com/releases/2026/05/260529043654.htm": "2026-05-30"
+  "https://www.sciencedaily.com/releases/2026/05/260529043654.htm": "2026-05-30",
+  "https://github.com/RsyncProject/rsync/issues/929": "2026-05-31",
+  "https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/": "2026-05-31",
+  "https://www.infoq.com/news/2026/05/duckdb-quack-protocol/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-31",
+  "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-31"
 }
