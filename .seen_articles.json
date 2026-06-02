@@ -1,17 +1,4 @@
 {
-  "https://thenewstack.io/ibm-bob-agentic-development/": "2026-05-02",
-  "https://www.infoq.com/news/2026/05/ducklake-sql-catalog/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-02",
-  "https://www.infoq.com/news/2026/05/clawrunr/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-02",
-  "https://www.infoq.com/news/2026/05/confluent-kafka-header-schema-id/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-02",
-  "https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/": "2026-05-02",
-  "https://arstechnica.com/ai/2026/05/study-ai-models-that-consider-users-feeling-are-more-likely-to-make-errors/": "2026-05-02",
-  "https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/": "2026-05-02",
-  "https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/": "2026-05-02",
-  "https://archaeology.org/news/2026/05/01/neolithic-bread-wheat-identified-in-the-south-caucasus/": "2026-05-02",
-  "https://www.sciencedaily.com/releases/2026/05/260501052844.htm": "2026-05-02",
-  "https://astrobites.org/2026/05/02/template-post-38/": "2026-05-02",
-  "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-launch-cas500-2-mission-45-satellites": "2026-05-02",
-  "https://www.universetoday.com/articles/radio-telescope-array-reveals-the-masses-of-hidden-young-stars": "2026-05-02",
   "https://arstechnica.com/tech-policy/2026/05/elon-musk-tried-to-hire-openai-founders-to-start-ai-unit-inside-tesla/": "2026-05-07",
   "https://www.theverge.com/column/925898/netflix-ai-voice-search": "2026-05-07",
   "https://arxiv.org/abs/2605.02910": "2026-05-07",
@@ -393,5 +380,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260601025356.htm": "2026-06-01",
   "https://www.sciencedaily.com/releases/2026/06/260601025352.htm": "2026-06-01",
   "https://www.sciencedaily.com/releases/2026/05/260530053420.htm": "2026-06-01",
-  "https://www.nature.com/articles/s41586-026-10507-6": "2026-06-01"
+  "https://www.nature.com/articles/s41586-026-10507-6": "2026-06-01",
+  "https://thenewstack.io/jetbrains-mellum2-open-source-coding-model/": "2026-06-02",
+  "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/": "2026-06-02",
+  "https://www.infoq.com/news/2026/06/opentelemetry-blueprints-launch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-02",
+  "https://www.infoq.com/news/2026/06/google-workspace-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-02"
 }
