@@ -1,21 +1,4 @@
 {
-  "https://thenewstack.io/kubernetes-fleet-management-scale/": "2026-05-08",
-  "https://www.openwall.com/lists/oss-security/2026/05/07/8": "2026-05-08",
-  "https://www.infoq.com/articles/asp-net-core-side-car/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-08",
-  "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/": "2026-05-08",
-  "https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/": "2026-05-08",
-  "https://www.wired.com/story/nick-bostrom-has-a-plan-for-humanitys-big-retirement/": "2026-05-08",
-  "https://arxiv.org/abs/2605.05365": "2026-05-08",
-  "https://arxiv.org/abs/2605.05386": "2026-05-08",
-  "https://archaeology.org/news/2026/05/07/scientists-explore-neolithic-crannog-in-scotland/": "2026-05-08",
-  "https://news.mongabay.com/short-article/2026/05/in-mozambique-four-isolated-mountains-yield-four-new-chameleon-species/": "2026-05-08",
-  "https://skyandtelescope.org/astronomy-news/astronomers-spot-possible-missing-link-to-webbs-little-red-dots/": "2026-05-08",
-  "https://earthsky.org/space/tiny-world-with-an-atmosphere-outer-solar-system-tno-2002-xv93/": "2026-05-08",
-  "https://www.universetoday.com/articles/black-holes-dont-live-forever-but-they-might-live-long-enough-to-look-like-white-holes": "2026-05-08",
-  "https://www.sciencedaily.com/releases/2026/05/260508171123.htm": "2026-05-08",
-  "https://www.sciencedaily.com/releases/2026/05/260508024740.htm": "2026-05-08",
-  "https://www.sciencedaily.com/releases/2026/05/260508024125.htm": "2026-05-08",
-  "https://www.nature.com/articles/d41586-026-01447-2": "2026-05-08",
   "https://thenewstack.io/cursor-sdk-ai-agents/": "2026-05-09",
   "https://www.infoq.com/news/2026/05/cloudflare-dynamic-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-09",
   "https://www.infoq.com/news/2026/05/github-agentic-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-09",
@@ -465,5 +448,9 @@
   "https://www.space.com/astronomy/galaxies/trouble-near-the-milky-way-the-large-magellanic-cloud-is-ripping-its-smaller-neighbor-galaxy-apart": "2026-06-07",
   "https://www.space.com/space-exploration/human-spaceflight/could-meteor-storms-harm-nasas-future-moon-missions": "2026-06-07",
   "https://www.universetoday.com/articles/why-cant-the-universe-be-cyclic-part-1-the-lure-of-the-eternal-universe": "2026-06-07",
-  "https://www.sciencedaily.com/releases/2026/06/260606015140.htm": "2026-06-07"
+  "https://www.sciencedaily.com/releases/2026/06/260606015140.htm": "2026-06-07",
+  "https://thenewstack.io/apache-cassandra-6-features/": "2026-06-08",
+  "https://thenewstack.io/microsoft-visual-studio-ai-agents/": "2026-06-08",
+  "https://thenewstack.io/ai-deployment-pipeline-velocity/": "2026-06-08",
+  "https://www.infoq.com/news/2026/06/java-news-roundup-jun01-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-08"
 }
