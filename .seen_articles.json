@@ -1,21 +1,4 @@
 {
-  "https://thenewstack.io/cursor-sdk-ai-agents/": "2026-05-09",
-  "https://www.infoq.com/news/2026/05/cloudflare-dynamic-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-09",
-  "https://www.infoq.com/news/2026/05/github-agentic-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-09",
-  "https://aws.amazon.com/blogs/devops/building-an-end-to-end-agentic-sre-using-aws-devops-agent/": "2026-05-09",
-  "https://arstechnica.com/ai/2026/05/the-new-wild-west-of-ai-kids-toys/": "2026-05-09",
-  "https://arstechnica.com/science/2026/05/manufacturing-qubits-that-can-move/": "2026-05-09",
-  "https://arstechnica.com/gaming/2026/05/sony-says-efficient-ai-tools-will-lead-to-even-more-games-flooding-the-market/": "2026-05-09",
-  "https://www.wired.com/gallery/best-captioning-glasses/": "2026-05-09",
-  "https://www.sciencedaily.com/releases/2026/05/260508003113.htm": "2026-05-09",
-  "https://phys.org/news/2026-05-genetics-link-angola-ghost-elephants.html": "2026-05-09",
-  "https://astrobites.org/2026/05/09/many-mergers-might-fill-mass-gap/": "2026-05-09",
-  "https://www.space.com/space-exploration/how-long-can-the-voyager-probes-keep-exploring-interstellar-space-nasa-gearing-up-for-big-bang-maneuver-to-boost-dwindling-power-levels": "2026-05-09",
-  "https://www.universetoday.com/articles/pluto-like-worlds-thin-atmosphere-poses-a-mystery-for-astronomers": "2026-05-09",
-  "https://www.sciencedaily.com/releases/2026/05/260508211025.htm": "2026-05-09",
-  "https://www.sciencedaily.com/releases/2026/05/260508003131.htm": "2026-05-09",
-  "https://www.sciencedaily.com/releases/2026/05/260508003121.htm": "2026-05-09",
-  "https://www.sciencedaily.com/releases/2026/05/260508003119.htm": "2026-05-09",
   "https://github.com/imtomt/ymawky": "2026-05-10",
   "https://zed.dev/theme-builder": "2026-05-10",
   "https://blog.kronis.dev/blog/apple-is-increasing-my-cortisol-levels": "2026-05-10",
@@ -465,5 +448,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260606075901.htm": "2026-06-08",
   "https://www.nasa.gov/image-article/supersonic/": "2026-06-08",
   "https://arxiv.org/abs/2606.06504": "2026-06-08",
-  "https://arxiv.org/abs/2606.06507": "2026-06-08"
+  "https://arxiv.org/abs/2606.06507": "2026-06-08",
+  "https://thenewstack.io/azure-repos-github-migration/": "2026-06-09",
+  "https://www.infoq.com/presentations/automate-fleetwide-changes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-09",
+  "https://www.infoq.com/news/2026/06/aws-opensearch-serverless/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-09",
+  "https://www.infoq.com/news/2026/06/pinterest-miqps-url-dedup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-09"
 }
