@@ -1,17 +1,4 @@
 {
-  "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/": "2026-05-11",
-  "https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/": "2026-05-11",
-  "https://www.infoq.com/articles/local-first-ai-inference-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-11",
-  "https://www.infoq.com/news/2026/05/netflix-ml-graph/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-11",
-  "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped": "2026-05-11",
-  "https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company": "2026-05-11",
-  "https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai": "2026-05-11",
-  "https://arxiv.org/abs/2605.06672": "2026-05-11",
-  "https://www.biblicalarchaeology.org/daily/ancient-cultures/news-in-the-history-of-the-alphabet/": "2026-05-11",
-  "https://www.theguardian.com/environment/2026/may/11/pfas-seabird-eggs-forever-chemicals": "2026-05-11",
-  "https://skyandtelescope.org/astronomy-news/a-black-holes-puzzling-x-ray-bursts/": "2026-05-11",
-  "http://link.aps.org/doi/10.1103/Physics.19.66": "2026-05-11",
-  "https://www.universetoday.com/articles/astronomers-find-an-x-ray-key-to-the-red-dot-mystery": "2026-05-11",
   "https://www.infoq.com/news/2026/05/pinterest-cpu-zombies-bottleneck/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-14",
   "https://www.infoq.com/news/2026/05/anthropic-claude-code-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-14",
   "https://www.infoq.com/news/2026/05/kubernetes-1-36-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-14",
@@ -466,5 +453,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260610003047.htm": "2026-06-10",
   "https://www.sciencedaily.com/releases/2026/06/260610003044.htm": "2026-06-10",
   "https://www.sciencedaily.com/releases/2026/06/260610003042.htm": "2026-06-10",
-  "https://www.nature.com/articles/d41586-026-01832-x": "2026-06-10"
+  "https://www.nature.com/articles/d41586-026-01832-x": "2026-06-10",
+  "https://thenewstack.io/observability-overload-is-drowning-engineers/": "2026-06-11",
+  "https://www.infoq.com/news/2026/06/platform-project-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-11",
+  "https://www.infoq.com/news/2026/06/postgresql-pg-durable/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-11",
+  "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers/": "2026-06-11"
 }
