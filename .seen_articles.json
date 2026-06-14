@@ -1,21 +1,4 @@
 {
-  "https://www.infoq.com/news/2026/05/pinterest-cpu-zombies-bottleneck/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-14",
-  "https://www.infoq.com/news/2026/05/anthropic-claude-code-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-14",
-  "https://www.infoq.com/news/2026/05/kubernetes-1-36-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-14",
-  "https://www.infoq.com/news/2026/05/anthropic-claude-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-14",
-  "https://www.technologyreview.com/2026/05/14/1137161/ai-porn-nonconsensual-deepfakes-takedown-piracy-copyright/": "2026-05-14",
-  "https://www.theverge.com/column/930118/netflix-gen-ai-animation-inkubator": "2026-05-14",
-  "https://www.theverge.com/ai-artificial-intelligence/930477/ai-data-centers-gallup-survey-70-percent-opposition": "2026-05-14",
-  "https://arxiv.org/abs/2605.12673": "2026-05-14",
-  "https://www.sciencedaily.com/releases/2026/05/260514003314.htm": "2026-05-14",
-  "https://www.sciencedaily.com/releases/2026/05/260513221807.htm": "2026-05-14",
-  "https://skyandtelescope.org/astronomy-news/webb-telescope-reveals-brown-dwarfs-masquerading-as-early-galaxies/": "2026-05-14",
-  "https://www.universetoday.com/articles/the-universes-biggest-black-holes-arent-born-theyre-built": "2026-05-14",
-  "https://www.universetoday.com/articles/the-planet-that-shouldnt-exist-but-does": "2026-05-14",
-  "https://www.sciencedaily.com/releases/2026/05/260514084421.htm": "2026-05-14",
-  "https://www.sciencedaily.com/releases/2026/05/260513221818.htm": "2026-05-14",
-  "https://www.sciencedaily.com/releases/2026/05/260513221751.htm": "2026-05-14",
-  "https://www.nature.com/articles/d41586-026-01538-0": "2026-05-14",
   "https://thenewstack.io/python-rust-ai-sidecar/": "2026-05-15",
   "https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/": "2026-05-15",
   "https://aws.amazon.com/blogs/devops/simplify-cross-account-and-cross-region-stack-output-references-with-aws-cloudformation-and-cdks-new-fngetstackoutput/": "2026-05-15",
@@ -500,5 +483,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260613034225.htm": "2026-06-13",
   "https://www.sciencedaily.com/releases/2026/06/260613034222.htm": "2026-06-13",
   "https://www.sciencedaily.com/releases/2026/06/260613034217.htm": "2026-06-13",
-  "https://www.sciencedaily.com/releases/2026/06/260612032030.htm": "2026-06-13"
+  "https://www.sciencedaily.com/releases/2026/06/260612032030.htm": "2026-06-13",
+  "https://thenewstack.io/jetbrains-course-creators-program/": "2026-06-14",
+  "https://thenewstack.io/agent-loops-cloud-native-verification/": "2026-06-14",
+  "https://www.infoq.com/news/2026/06/elasticache-valkey-durability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-14",
+  "https://www.infoq.com/news/2026/06/terraform-mcp-server-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-14"
 }
