@@ -1,19 +1,4 @@
 {
-  "https://thenewstack.io/github-copilot-desktop-app/": "2026-05-17",
-  "https://crates.io/crates/zerostack/1.0.0": "2026-05-17",
-  "https://www.infoq.com/news/2026/05/monzo-data-mesh/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-17",
-  "https://www.infoq.com/news/2026/05/ubuntu-on-device-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-17",
-  "https://www.theverge.com/gadgets/928806/elliq-intuition-robotics-hands-on": "2026-05-17",
-  "https://www.theverge.com/column/928096/chatbots-ai-drive-thru-mcdonalds-wendys": "2026-05-17",
-  "https://www.wired.com/review/oto-smart-sprinkler/": "2026-05-17",
-  "https://www.theverge.com/tech/932153/snap-youtube-tiktok-lawsuit-social-media-addiction-schools": "2026-05-17",
-  "https://www.sciencedaily.com/releases/2026/05/260515233337.htm": "2026-05-17",
-  "https://www.sciencedaily.com/releases/2026/05/260515233327.htm": "2026-05-17",
-  "https://astrobites.org/2026/05/16/collapsar-neutrino-simulations/": "2026-05-17",
-  "https://www.space.com/astronomy/mars/watch-nasas-new-mars-helicopter-rotor-break-the-speed-of-sound-video": "2026-05-17",
-  "https://www.universetoday.com/articles/what-if-the-universe-had-no-beginning-part-2-no-boundary-no-problem": "2026-05-17",
-  "https://www.sciencedaily.com/releases/2026/05/260517030326.htm": "2026-05-17",
-  "https://www.sciencedaily.com/releases/2026/05/260515233340.htm": "2026-05-17",
   "https://aws.amazon.com/blogs/devops/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources/": "2026-05-18",
   "https://aws.amazon.com/blogs/devops/building-self-extending-cli-tools-with-aws-strands/": "2026-05-18",
   "https://www.infoq.com/articles/secure-mcp-server-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-18",
@@ -497,5 +482,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260615033846.htm": "2026-06-16",
   "https://www.sciencedaily.com/releases/2026/06/260615033841.htm": "2026-06-16",
   "https://www.nature.com/articles/d41586-026-01915-9": "2026-06-16",
-  "https://www.sciencedaily.com/releases/2026/06/260615033843.htm": "2026-06-16"
+  "https://www.sciencedaily.com/releases/2026/06/260615033843.htm": "2026-06-16",
+  "https://thenewstack.io/aws-finops-agent-ai/": "2026-06-17",
+  "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon": "2026-06-17",
+  "https://www.infoq.com/news/2026/06/github-copilot-app/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-17",
+  "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/": "2026-06-17"
 }
