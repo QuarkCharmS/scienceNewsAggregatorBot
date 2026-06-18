@@ -1,21 +1,4 @@
 {
-  "https://aws.amazon.com/blogs/devops/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources/": "2026-05-18",
-  "https://aws.amazon.com/blogs/devops/building-self-extending-cli-tools-with-aws-strands/": "2026-05-18",
-  "https://www.infoq.com/articles/secure-mcp-server-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-18",
-  "https://www.infoq.com/news/2026/05/java-news-roundup-may11-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-18",
-  "https://spectrum.ieee.org/melbourne-ai-data-center-innovation": "2026-05-18",
-  "https://events.bizzabo.com/867156": "2026-05-18",
-  "https://arstechnica.com/ai/2026/05/bug-bounty-businesses-bombarded-with-ai-slop/": "2026-05-18",
-  "https://www.theverge.com/tech/932375/amazon-alexa-plus-ai-podcasts": "2026-05-18",
-  "https://www.sciencedaily.com/releases/2026/05/260517211429.htm": "2026-05-18",
-  "https://www.sciencedaily.com/releases/2026/05/260517211447.htm": "2026-05-18",
-  "https://skyandtelescope.org/astronomy-news/whats-feeding-our-supermassive-black-hole/": "2026-05-18",
-  "https://www.space.com/space-exploration/launches-spacecraft/what-time-is-spacex-starship-v3-launch-starship-flight-12-timeline": "2026-05-18",
-  "https://www.universetoday.com/articles/asteroid-2022-ob5-spins-too-fast-for-current-prospectors-highlighting-the-divide-between-accessible": "2026-05-18",
-  "https://www.sciencedaily.com/releases/2026/05/260517211443.htm": "2026-05-18",
-  "https://www.sciencedaily.com/releases/2026/05/260517211440.htm": "2026-05-18",
-  "https://www.sciencedaily.com/releases/2026/05/260515233350.htm": "2026-05-18",
-  "https://www.nature.com/articles/s41586-026-10649-7": "2026-05-18",
   "https://www.infoq.com/news/2026/05/tanstack-supply-chain-attack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-19",
   "https://www.infoq.com/articles/ebpf-for-security-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-19",
   "https://www.infoq.com/news/2026/05/vite-v8-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-19",
@@ -499,5 +482,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260617032207.htm": "2026-06-17",
   "https://www.nature.com/articles/d41586-026-01923-9": "2026-06-17",
   "https://www.nature.com/articles/d41586-026-01868-z": "2026-06-17",
-  "https://www.sciencedaily.com/releases/2026/06/260614012011.htm": "2026-06-17"
+  "https://www.sciencedaily.com/releases/2026/06/260614012011.htm": "2026-06-17",
+  "https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/": "2026-06-18",
+  "https://www.infoq.com/news/2026/06/vscode-extension-update-delay/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-18",
+  "https://thenewstack.io/vercel-launches-eve-an-open-source-framework-that-treats-agents-as-directories/": "2026-06-18",
+  "https://aws.amazon.com/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview/": "2026-06-18"
 }
