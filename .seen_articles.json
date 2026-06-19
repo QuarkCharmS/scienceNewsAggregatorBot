@@ -1,21 +1,4 @@
 {
-  "https://www.infoq.com/news/2026/05/tanstack-supply-chain-attack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-19",
-  "https://www.infoq.com/articles/ebpf-for-security-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-19",
-  "https://www.infoq.com/news/2026/05/vite-v8-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-19",
-  "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/": "2026-05-19",
-  "https://arxiv.org/abs/2605.16265": "2026-05-19",
-  "https://arxiv.org/abs/2605.16565": "2026-05-19",
-  "https://www.theverge.com/tech/933653/ai-graduation-commencement-glendale-community-college": "2026-05-19",
-  "https://arxiv.org/abs/2605.16259": "2026-05-19",
-  "https://archaeology.org/news/2026/05/18/neanderthal-dentistry-dates-back-60000-years/": "2026-05-19",
-  "https://www.theguardian.com/world/2026/may/19/online-sale-primates-social-media": "2026-05-19",
-  "https://skyandtelescope.org/astronomy-news/smile-european-space-weather-mission-launches/": "2026-05-19",
-  "https://skyandtelescope.org/astronomy-news/how-jupiters-moon-ganymede-melted-its-core/": "2026-05-19",
-  "https://www.universetoday.com/articles/an-explanation-for-the-massive-black-holes-the-jwst-found-in-the-early-universe": "2026-05-19",
-  "https://www.sciencedaily.com/releases/2026/05/260518041445.htm": "2026-05-19",
-  "https://www.sciencedaily.com/releases/2026/05/260518041429.htm": "2026-05-19",
-  "https://arxiv.org/abs/2605.16313": "2026-05-19",
-  "https://arxiv.org/abs/2605.16323": "2026-05-19",
   "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage": "2026-05-20",
   "https://twitter.com/github/status/2056884788179726685": "2026-05-20",
   "https://www.infoq.com/news/2026/05/pip-261-dependency-cooldowns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-20",
@@ -499,5 +482,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260618041519.htm": "2026-06-18",
   "https://www.sciencedaily.com/releases/2026/06/260617032155.htm": "2026-06-18",
   "https://www.nature.com/articles/d41586-026-01869-y": "2026-06-18",
-  "https://www.nature.com/articles/d41586-026-01910-0": "2026-06-18"
+  "https://www.nature.com/articles/d41586-026-01910-0": "2026-06-18",
+  "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a": "2026-06-19",
+  "https://www.infoq.com/news/2026/06/circleci-chunk-sidecars/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-19",
+  "https://www.infoq.com/news/2026/06/tsrx-alternative-jsx/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-19",
+  "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/": "2026-06-19"
 }
