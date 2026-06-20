@@ -1,21 +1,4 @@
 {
-  "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage": "2026-05-20",
-  "https://twitter.com/github/status/2056884788179726685": "2026-05-20",
-  "https://www.infoq.com/news/2026/05/pip-261-dependency-cooldowns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-20",
-  "https://aws.amazon.com/blogs/devops/automate-root-cause-analysis-across-datadog-and-elasticsearch-with-aws-devops-agent/": "2026-05-20",
-  "https://arstechnica.com/science/2026/05/two-ai-based-science-assistants-succeed-with-drug-retargeting-tasks/": "2026-05-20",
-  "https://arstechnica.com/ai/2026/05/the-internet-cant-stop-watching-figure-ais-humanoid-robots-handling-packages/": "2026-05-20",
-  "https://www.theverge.com/tech/934704/google-gemini-omni-youtub-shorts-remix-ai": "2026-05-20",
-  "https://www.theverge.com/tech/934585/google-ai-shopping-ads-search": "2026-05-20",
-  "https://www.sciencedaily.com/releases/2026/05/260519003311.htm": "2026-05-20",
-  "https://news.mongabay.com/short-article/2026/05/ghost-shark-carnivorous-sponge-among-1000-newly-discovered-marine-species/": "2026-05-20",
-  "https://www.space.com/astronomy/neptune/where-did-neptunes-mysterious-moon-nereid-come-from-it-may-be-the-only-survivor-of-the-planets-violent-history": "2026-05-20",
-  "https://www.universetoday.com/articles/it-looks-like-europa-doesnt-have-plumes-of-water-vapour-after-all": "2026-05-20",
-  "https://earthsky.org/space/psyche-mission-fly-by-mars-may-15-2026-pics/": "2026-05-20",
-  "https://www.sciencedaily.com/releases/2026/05/260519224334.htm": "2026-05-20",
-  "https://www.sciencedaily.com/releases/2026/05/260519224332.htm": "2026-05-20",
-  "https://www.sciencedaily.com/releases/2026/05/260519224319.htm": "2026-05-20",
-  "https://www.nature.com/articles/d41586-026-01643-0": "2026-05-20",
   "https://www.infoq.com/news/2026/05/platform-golden-bricks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-21",
   "https://www.infoq.com/news/2026/05/opentofu-release-terraform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-21",
   "https://www.infoq.com/news/2026/05/agent-friendly-android-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-21",
@@ -499,5 +482,9 @@
   "https://www.sciencedaily.com/releases/2026/06/260619020506.htm": "2026-06-19",
   "https://www.sciencedaily.com/releases/2026/06/260618041515.htm": "2026-06-19",
   "https://www.nature.com/articles/d41586-026-01948-0": "2026-06-19",
-  "https://www.nature.com/articles/d41586-026-01925-7": "2026-06-19"
+  "https://www.nature.com/articles/d41586-026-01925-7": "2026-06-19",
+  "https://www.infoq.com/news/2026/06/apple-core-ai-wwdc/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-20",
+  "https://www.infoq.com/news/2026/06/cognito-replication-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-20",
+  "https://www.infoq.com/news/2026/06/block-450-jvm-monorepo-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-20",
+  "https://aws.amazon.com/blogs/devops/feature-flag-orchestration-with-aws-devops-agent-and-launchdarkly/": "2026-06-20"
 }
