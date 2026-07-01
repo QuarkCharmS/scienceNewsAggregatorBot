@@ -1,20 +1,4 @@
 {
-  "https://github.com/RsyncProject/rsync/issues/929": "2026-05-31",
-  "https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/": "2026-05-31",
-  "https://www.infoq.com/news/2026/05/duckdb-quack-protocol/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-31",
-  "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-05-31",
-  "https://www.wired.com/story/how-turkey-hacked-the-hair-transplant-industry/": "2026-05-31",
-  "https://www.theverge.com/tech/940221/asus-rog-strix-scar-18-elmb-gaming-laptop-motion-blur-handson-impressions": "2026-05-31",
-  "https://www.theverge.com/gadgets/940126/007-first-light-ps5-pc-steam-deal-sale": "2026-05-31",
-  "https://www.theverge.com/games/940214/marathon-bungie-season-two-turnaround-destiny-changes": "2026-05-31",
-  "https://www.theguardian.com/environment/2026/may/31/swimming-horseshoe-whip-snake-threat-ibiza-wall-lizard": "2026-05-31",
-  "https://www.universetoday.com/articles/it-took-a-cosmic-village-to-shape-early-galaxies": "2026-05-31",
-  "https://www.universetoday.com/articles/lasers-at-the-lunar-poles-could-help-astronauts-navigate": "2026-05-31",
-  "https://www.space.com/technology/watch-this-bio-inspired-mars-rover-concept-swim-through-sand-on-curved-wheels-video": "2026-05-31",
-  "https://www.sciencedaily.com/releases/2026/05/260530053418.htm": "2026-05-31",
-  "https://www.sciencedaily.com/releases/2026/05/260530053414.htm": "2026-05-31",
-  "https://www.sciencedaily.com/releases/2026/05/260530004622.htm": "2026-05-31",
-  "https://www.sciencedaily.com/releases/2026/05/260529043640.htm": "2026-05-31",
   "https://github.com/RedHatInsights/javascript-clients/issues/492": "2026-06-01",
   "https://www.infoq.com/news/2026/06/shopify-graphql-cardinal-bfs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-01",
   "https://www.infoq.com/news/2026/06/badhost-ai-systems-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global": "2026-06-01",
@@ -341,5 +325,9 @@
   "https://www.universetoday.com/articles/making-sense-of-mars-tiny-moon-of-phobos": "2026-06-20",
   "https://www.sciencedaily.com/releases/2026/06/260619101349.htm": "2026-06-20",
   "https://www.sciencedaily.com/releases/2026/06/260619101328.htm": "2026-06-20",
-  "https://www.sciencedaily.com/releases/2026/06/260616103124.htm": "2026-06-20"
+  "https://www.sciencedaily.com/releases/2026/06/260616103124.htm": "2026-06-20",
+  "https://ngrok.com/blog/i-ported-kubernetes-to-the-browser": "2026-07-01",
+  "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/": "2026-07-01",
+  "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/": "2026-07-01",
+  "https://aws.amazon.com/blogs/aws/accelerate-your-infrastructure-deployments-by-up-to-4x-with-aws-cloudformation-express-mode/": "2026-07-01"
 }
